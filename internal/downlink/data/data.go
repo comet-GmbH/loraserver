@@ -141,6 +141,9 @@ func Setup(conf config.Config) error {
 
 	classCDownlinkLockDuration = conf.NetworkServer.Scheduler.ClassC.DownlinkLockDuration
 
+	// PLN
+	adr.Setup(conf);
+
 	return nil
 }
 
